@@ -9,7 +9,7 @@ Inphone merupakan aplikasi listing spesifikasi handphone dari berbagai brand. Pe
 3. Alfin Vidyanto - System Analyst
 4. Nadiah Ratnaduhita - Developer
 5. Desy Fitri Aulia - UI/UX DESIGN
-6. Karina Putri - Technical Writer
+6. Karina Putri Permatasari - Technical Writer
 
 ----
 
