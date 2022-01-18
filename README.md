@@ -57,3 +57,11 @@ Inphone merupakan aplikasi listing spesifikasi handphone dari berbagai brand. Pe
 
 
 -- END --
+
+## Referensi Tutorial:
+
+- [https://mobikul.com/bottom-tab-navigation-in-react-native/](https://mobikul.com/bottom-tab-navigation-in-react-native/)
+
+- [https://reactnavigation.org/docs/tab-based-navigation/](https://reactnavigation.org/docs/tab-based-navigation/)
+
+- [https://github.com/JeffGuKang/react-native-tutorial/blob/master/docs/router-tutorial/02-react-navigation-tab/react-navigation-tab.md](https://github.com/JeffGuKang/react-native-tutorial/blob/master/docs/router-tutorial/02-react-navigation-tab/react-navigation-tab.md)
