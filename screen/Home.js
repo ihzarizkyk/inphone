@@ -38,7 +38,7 @@ InPhone HomePage
 
 <Button title="Go to About"
 onPress={() => this.props.navigation.navigate('about')}
-/>
+ style={{marginBottom: 50}}/>
 
 <Button title="Go to Details"
 onPress={() => this.props.navigation.navigate('Details')}
