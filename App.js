@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import Home from './screen/Home';
-import About from'./screen/About';
-import Details from'./screen/Details';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer} from '@react-navigation/native';
-import Ionicons from '@expo/vector-icons/Ionicons';
- 
-const sampleTabNavigation = createBottomTabNavigator(
-);
- 
-=======
 import React from "react";
 import Home from "./screen/Home";
 import About from "./screen/About";
@@ -19,8 +6,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
 const sampleTabNavigation = createBottomTabNavigator();
-
->>>>>>> b7c7109197f2896344122f5323572f4991bd06a7
 export default class App extends React.Component {
   render() {
     return (
