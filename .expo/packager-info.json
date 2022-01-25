@@ -2,9 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19000,
-  "webpackServerPort": null,
+  "webpackServerPort": 19006,
   "packagerPid": null,
-  "expoServerNgrokUrl": "https://rt-72e.anonymous.inphone.exp.direct",
-  "packagerNgrokUrl": "https://packager.rt-72e.anonymous.inphone.exp.direct",
-  "ngrokPid": 11580
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }
