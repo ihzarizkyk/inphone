@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Button, StyleSheet, Text, View, ActivityIndicator, Image, ScrollView, TouchableOpacity, FlatList } from 'react-native';
+import { Button, StyleSheet, Text, View, ActivityIndicator, Image, ScrollView, TouchableOpacity, FlatList,} from 'react-native';
 import { Navigation } from "@react-navigation/native";
 
 const Home = ({navigation}) =>{
@@ -7,7 +7,7 @@ const Home = ({navigation}) =>{
     const [isLoading, setLoading] = useState(true);
 
     
-    const getData = async () => {
+const getData = async () => {
         try {
             const response = await fetch("https://7c05-139-228-215-130.ngrok.io/api/products/all");
             const json = await response.json();
@@ -42,7 +42,8 @@ const Home = ({navigation}) =>{
  
      
     return(
-        <View>
+        <ScrollView>
+       <View>
             {
                 isLoading ? (
                     <ActivityIndicator size="large" color="#2196F3"/>
@@ -56,29 +57,31 @@ const Home = ({navigation}) =>{
             }
         
         </View>
-    )
-}
+        </ScrollView>
+    );
+    }
+        
 
-export default Home;
+    export default Home;
 
-const styles = StyleSheet.create({ 
-    container: {
-        margin: 1,
-        padding: 20,
-    },
+    const styles = StyleSheet.create({ 
+        container: {
+            margin: 1,
+            padding: 20,
+        },
 
-    Title :{
+        Title :{
 
-        margin:5,
-        fontWeight:'bold',
-        fontSize: 15
-    },
+            margin:5,
+            fontWeight:'bold',
+            fontSize: 15
+        },
 
-    card :{
-      boxShadow: "10px 10px 17px -12px rgba(0,0,0,0.75)",
-      width: 250,
-      height: 250,
-      marginBottom: 10
-    }    
+        card :{
+        shadowColor:"10px 10px 17px -12px rgba(0,0,0,0.75)",
+        width: 250,
+        height: 250,
+        marginBottom: 10
+        }    
 
-})
+    })
