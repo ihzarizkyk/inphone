@@ -6,7 +6,7 @@ const Details = ({ route }) => {
 	const [data,setData] = useState([]);
 	const [isLoading, setLoading] = useEffect(true);
 
-	const urlphones = "https://7c05-139-228-215-130.ngrok.io/api/products/detail/${route.params.Keys}";
+	const urlphones = "https://ead6-139-228-215-130.ngrok.io/api/products/detail/${route.params.Keys}";
 
 	const getDetail = async() => {
 		try{

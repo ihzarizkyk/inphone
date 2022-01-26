@@ -9,7 +9,7 @@ const Home = ({navigation}) =>{
     
 const getData = async () => {
         try {
-            const response = await fetch("https://7c05-139-228-215-130.ngrok.io/api/products/all");
+            const response = await fetch("https://ead6-139-228-215-130.ngrok.io/api/products/all");
             const json = await response.json();
             setData(json.results);
         } catch (error) {
