@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
+  "expoServerPort": 19000,
   "packagerPort": 19000,
   "webpackServerPort": 19006,
   "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerNgrokUrl": "https://rt-72e.ihzarizkyk.inphone.exp.direct",
+  "packagerNgrokUrl": "https://packager.rt-72e.ihzarizkyk.inphone.exp.direct",
+  "ngrokPid": 16302
 }

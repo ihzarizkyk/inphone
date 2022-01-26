@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import { Button, StyleSheet, Text, View, ActivityIndicator, Image, ScrollView, TouchableOpacity, FlatList,} from 'react-native';
 import { Navigation } from "@react-navigation/native";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Home = ({navigation}) =>{
+
     const [data, setData] = useState([]);
     const [isLoading, setLoading] = useState(true);
 
@@ -20,10 +22,11 @@ const getData = async () => {
     };
 
     const renderItem = ({ item }) => {
+
         return (
           <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <View style={styles.card}>
-            <TouchableOpacity onPress={() => this.props.navigation.navigate('Details',{Keys: item.id})}
+            <TouchableOpacity onPress={() => navigation.navigate('Details',{Keys: item.id})}
                 style={styles.container}>
                 <Text style={styles.Title}>{item.title}</Text>   
                 <Image source={{uri: item.image }}  style={{width:160, height:160}}/>
