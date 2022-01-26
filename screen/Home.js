@@ -21,9 +21,9 @@ const getData = async () => {
 
     const renderItem = ({ item }) => {
         return (
-          <View style={{flex: 1, alignItems: 'center', justifyContent: "center"}}>
+          <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <View style={styles.card}>
-            <TouchableOpacity onPress={() => navigation.navigate('Details')}
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('Details',{Keys: item.id})}
                 style={styles.container}>
                 <Text style={styles.Title}>{item.title}</Text>   
                 <Image source={{uri: item.image }}  style={{width:160, height:160}}/>
@@ -51,7 +51,7 @@ const getData = async () => {
                 ):(
                     <FlatList
                     data={data}
-                    keyExtractor={item => item.id}
+                    keyExtractor={(item) => item.id}
                     renderItem={renderItem}/>
                 )
             }
