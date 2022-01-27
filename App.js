@@ -37,13 +37,18 @@ const BottomNavigator = () => {
   );
 };
 
-export default class App extends React.Component {
-  render() {
-    return <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: "false" }}> 
-        <Stack.Screen name="BottomNavigator" component={BottomNavigator} options={{ headerShown: false }}/>
-        <Stack.Screen name="DetailSpech" component={Details} options={{ headerShown: false }}/>
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: "false" }}>
+        <Stack.Screen
+          name="BottomNavigator"
+          component={BottomNavigator}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen name="DetailSpech" component={Details} options={{ headerShown: false }} />
+        <Stack.Screen name="aboutTest" component={About} options={{ headerShown: false }} />
       </Stack.Navigator>
-    </NavigationContainer>;
-  }
+    </NavigationContainer>
+  );
 }
