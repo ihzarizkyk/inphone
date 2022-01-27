@@ -41,7 +41,7 @@ export default class Aboutscreen extends Component {
 
             <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 5 }}>More Information</Text>
             <Text style={{ fontSize: 15, color: "#565656" }}>InPhone@gmail.com {"\n"}@inphonePABkel7</Text>
-            <Text style={{ fontSize: 15, marginTop: 10, fontWeight: "bold" }}>Credits Api from techspecs.io</Text>
+            <Text style={{ fontSize: 15, marginTop: 10, fontWeight: "bold" }}>Credits Api from specsphones.rf.gd</Text>
           </View>
         </ScrollView>
       </SafeAreaView>
